@@ -59,6 +59,7 @@ group :development, :test do
   # Dan
   gem 'pry'
   gem 'pry-rails'
+  gem 'haml-rails'
   # Adds detail on the database schema to the top of model descriptions
   # Usage: annotate
   gem 'annotate'
