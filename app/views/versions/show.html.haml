@@ -1,0 +1,27 @@
+%p#notice= notice
+
+%p
+  %b Title:
+  = @version.title
+%p
+  %b Author:
+  = @version.author
+%p
+  %b Number:
+  = @version.number
+%p
+  %b Text:
+  = @version.text
+%p
+  %b Document:
+  = @version.document
+%p
+  %b Public readable:
+  = @version.public_readable
+%p
+  %b Public writeable:
+  = @version.public_writeable
+
+= link_to 'Edit', edit_version_path(@version)
+\|
+= link_to 'Back', versions_path

@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  author: MyString
+  number: MyString
+  text: MyText
+  document: one
+  public_readable: false
+  public_writeable: false
+
+two:
+  title: MyString
+  author: MyString
+  number: MyString
+  text: MyText
+  document: two
+  public_readable: false
+  public_writeable: false

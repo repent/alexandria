@@ -1,0 +1,33 @@
+%h1 Listing versions
+
+%table
+  %thead
+    %tr
+      %th Title
+      %th Author
+      %th Number
+      %th Text
+      %th Document
+      %th Public readable
+      %th Public writeable
+      %th
+      %th
+      %th
+
+  %tbody
+    - @versions.each do |version|
+      %tr
+        %td= version.title
+        %td= version.author
+        %td= version.number
+        %td= version.text
+        %td= version.document
+        %td= version.public_readable
+        %td= version.public_writeable
+        %td= link_to 'Show', version
+        %td= link_to 'Edit', edit_version_path(version)
+        %td= link_to 'Destroy', version, method: :delete, data: { confirm: 'Are you sure?' }
+
+%br
+
+= link_to 'New Version', new_version_path
